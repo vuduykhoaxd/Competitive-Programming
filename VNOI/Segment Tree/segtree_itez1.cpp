@@ -45,12 +45,8 @@ void outp(){
 	while(querries--){
 		ll call , x ,y;
 		cin >> call >> x >> y;
-		if (call == 1){
-			update(1 , 1, number , x , y);
-		}
-		else{
-			cout << querry(1 , 1, number , x , y) << end;
-		}
+		if (call == 1) update(1 , 1, number , x , y);
+		else cout << querry(1 , 1, number , x , y) << end;
 	}
 }
 int main(){
