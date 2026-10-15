@@ -1,27 +1,31 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <map>
-#define ll long long
+#define FASTIO ios_base::sync_with_stdio(0);cin.tie(0);
 
 using namespace std;
+struct BKS{
+	int sign;
+	double cap;
+	char cpn;
+};
+bool cmp(BKS a , BKS b){
+	return a.cap < b.cap;
+}
+vector<BKS> car;
 int main(){
-	ios_base::sync_with_stdio(0);cin.tie(0);
-	ll n , ans = 0;
-	cin >> n;
-	map<double , ll > mp;
+	FASTIO
+	int n , ans = 0;cin>>n;
 	while (n--){
-		ll a;double b ; char c;
-		cin >> a >> b >> c;
-		mp[b] = a;
-		if (c == 'B' && a%3==0) ans++;
+		BKS A;
+		cin >> A.sign >> A.cap >> A.cpn;
+		if (A.cpn == 'B' && A.sign%3 == 0) ans++;
+		car.push_back(A);
 	}
+	stable_sort(car.begin(), car.end() , cmp);
 	cout << ans << "\n";
-	ll i=1;
-	for (auto x : mp){
-		cout << x.second <<"\n";
-		if (i == 3) return 0;
-		i++;
+	for (int i = 0 ; i < 3 ; i++){
+		cout << car[i].sign << "\n";
 	}
 	return 0;
 }
