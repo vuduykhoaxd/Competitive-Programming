@@ -1,5 +1,5 @@
 # Competitive Programming
-
+// non-update
 My solutions and practice attempts from various online judges.
 
 ## Progress
