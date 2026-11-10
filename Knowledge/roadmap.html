@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lộ trình DSA &amp; Competitive Programming — sơ đồ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="booting">
+
+<header>
+  <div class="brand">
+    <span class="logo"></span>
+    <div>
+      <b>Lộ trình DSA &amp; Competitive Programming</b>
+      <small>Sơ đồ rẽ nhánh</small>
+    </div>
+  </div>
+
+  <div class="hprogress">
+    <div class="hp"><b id="hPct">0%</b><span id="hText">0 / 0 mục</span></div>
+    <div class="bar"><i id="hBar"></i></div>
+  </div>
+
+  <div class="tools">
+    <div class="search">
+      <span class="ic">⌕</span>
+      <input id="search" type="search" placeholder="Tìm chủ đề… ( / )" autocomplete="off">
+    </div>
+    <div class="seg" id="filters">
+      <button data-filter="all" class="active">Tất cả</button>
+      <button data-filter="none">Chưa học</button>
+      <button data-filter="learned">Đã học</button>
+    </div>
+    <button class="btn danger" id="resetBtn">Đặt lại</button>
+    <button class="btn admin" id="adminBtn" type="button" title="Đăng nhập để chỉnh sửa tiến độ">⚿ Admin</button>
+  </div>
+</header>
+
+<div class="adminbar" id="adminBar" hidden>
+  <span class="dot" aria-hidden="true"></span>
+  <b>Admin</b>
+  <span class="repo mono" id="adminRepo"></span>
+  <span class="sep" aria-hidden="true"></span>
+  <span id="adminDraft">Không có thay đổi</span>
+  <span class="grow"></span>
+  <button class="btn sm" id="publishBtn" type="button">Publish</button>
+  <button class="btn sm ghost" id="discardBtn" type="button">Discard</button>
+  <button class="btn sm ghost" id="logoutBtn" type="button">Đăng xuất</button>
+</div>
+
+<div class="viewport" id="vp">
+  <div class="stage" id="stage">
+    <svg class="edges" id="edges" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div id="nodes"></div>
+  </div>
+  <div class="empty-state" id="emptyState">Không có mục nào khớp bộ lọc hiện tại.</div>
+  <div class="hint">
+    <b>Kéo</b> để di chuyển · <b>Lăn chuột</b> để thu phóng · <b>Click ô</b> để mở / thu gọn nhánh<br>
+    <b>Click một mục</b> để chuyển <b>None ↔ Learned</b> · <b>Nhấp đúp</b> nền để vừa khung
+  </div>
+  <div class="legend">
+    <span>Mức độ</span>
+    <span class="lvl lv-core">Cơ bản</span>
+    <span class="lvl lv-mid">Trung bình</span>
+    <span class="lvl lv-high">Nâng cao</span>
+    <span class="lvl lv-expert">Chuyên sâu</span>
+  </div>
+  <div class="controls">
+    <div class="zoom">
+      <button id="zoomOut" title="Thu nhỏ">−</button>
+      <span id="zoomLbl">100%</span>
+      <button id="zoomIn" title="Phóng to">+</button>
+    </div>
+    <button class="btn" id="fitBtn">Vừa khung</button>
+    <button class="btn" id="expandBtn">Mở hết</button>
+    <button class="btn" id="collapseBtn">Thu gọn</button>
+  </div>
+</div>
+
+<!-- ===== Admin: đăng nhập / publish tiến độ ===== -->
+<dialog class="modal" id="adminDlg" aria-labelledby="adminDlgTitle">
+  <form id="loginForm" autocomplete="off" novalidate>
+    <h2 id="adminDlgTitle">Đăng nhập Admin</h2>
+    <p class="muted">Token chỉ giữ trong bộ nhớ của tab này. Không lưu vào localStorage, không ghi ra file.</p>
+
+    <label for="tokenInput">GitHub token — fine-grained, quyền <b>Contents: Read and write</b></label>
+    <input id="tokenInput" type="password" autocomplete="new-password" spellcheck="false" autocapitalize="off" required placeholder="github_pat_…">
+
+    <div class="grid2">
+      <div>
+        <label for="ownerInput">Owner</label>
+        <input id="ownerInput" type="text" autocomplete="off" spellcheck="false" required>
+      </div>
+      <div>
+        <label for="repoInput">Repo</label>
+        <input id="repoInput" type="text" autocomplete="off" spellcheck="false" required>
+      </div>
+      <div>
+        <label for="branchInput">Branch</label>
+        <input id="branchInput" type="text" autocomplete="off" spellcheck="false" required>
+      </div>
+      <div>
+        <label for="pathInput">Đường dẫn file</label>
+        <input id="pathInput" type="text" autocomplete="off" spellcheck="false" required>
+      </div>
+    </div>
+
+    <label class="chk"><input type="checkbox" id="rememberCfg" checked> Ghi nhớ owner/repo/branch/path (không gồm token)</label>
+
+    <div class="err" id="loginErr" hidden></div>
+
+    <div class="row">
+      <button class="btn ghost" id="loginCancel" type="button">Huỷ</button>
+      <button class="btn primary" id="loginSubmit" type="submit">Đăng nhập</button>
+    </div>
+
+    <p class="hint2">Tạo token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens. Chỉ cấp quyền <b>Contents: Read and write</b> cho đúng repo này.</p>
+  </form>
+</dialog>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
