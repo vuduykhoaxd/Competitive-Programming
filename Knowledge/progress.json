@@ -1,6 +1,9 @@
 {
   "version": 1,
-  "updatedAt": null,
-  "updatedBy": null,
-  "learned": {}
+  "updatedAt": "2026-11-10T15:01:50.148Z",
+  "updatedBy": "roadmap-admin",
+  "learned": {
+    "cai-dat-trinh-bien-dich-ide": true,
+    "template-ca-nhan": true
+  }
 }
