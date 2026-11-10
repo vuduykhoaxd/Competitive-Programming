@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T16:24:02.947Z",
+  "updatedAt": "2026-11-10T16:25:28.060Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "assert-kiem-tra-bat-bien": true,
@@ -15,6 +15,7 @@
     "chuan-bi-ky-thi": true,
     "co-bien-dich-toi-uu": true,
     "codeforces": true,
+    "con-tro-cap-phat-dong": true,
     "cses-problem-set": true,
     "debugger-breakpoint": true,
     "dfs-tren-cay": true,
@@ -27,6 +28,7 @@
     "git-luu-tru-loi-giai": true,
     "go-loi-thuong-gap": true,
     "ham-tham-chieu-lambda": true,
+    "hang-so-enum-to-chuc-code": true,
     "kieu-so-nguyen-pham-vi": true,
     "lca-binary-lifting": true,
     "mang-chuoi-c-std-string": true,
