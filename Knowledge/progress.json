@@ -1,9 +1,17 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T15:01:50.148Z",
+  "updatedAt": "2026-11-10T16:14:03.643Z",
   "updatedBy": "roadmap-admin",
   "learned": {
+    "assert-kiem-tra-bat-bien": true,
     "cai-dat-trinh-bien-dich-ide": true,
+    "co-bien-dich-toi-uu": true,
+    "debugger-breakpoint": true,
+    "do-thoi-gian-bo-nho": true,
+    "doc-ghi-file-freopen": true,
+    "git-luu-tru-loi-giai": true,
+    "so-khop-output-script-test": true,
+    "stress-test-thu-nho-phan-vi-du": true,
     "template-ca-nhan": true
   }
 }
