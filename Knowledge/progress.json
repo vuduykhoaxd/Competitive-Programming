@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T16:25:28.060Z",
+  "updatedAt": "2026-11-11T16:45:46.549Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "assert-kiem-tra-bat-bien": true,
@@ -34,6 +34,7 @@
     "mang-chuoi-c-std-string": true,
     "map-multimap": true,
     "prefix-sum-1d": true,
+    "prefix-sum-2d": true,
     "quan-ly-thoi-gian": true,
     "sach-cp-algorithms": true,
     "sap-xep-co-ban": true,
