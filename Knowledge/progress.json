@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T16:45:46.549Z",
+  "updatedAt": "2026-11-13T11:36:15.920Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "assert-kiem-tra-bat-bien": true,
@@ -33,6 +33,7 @@
     "lca-binary-lifting": true,
     "mang-chuoi-c-std-string": true,
     "map-multimap": true,
+    "phan-tich-vong-lap-de-quy": true,
     "prefix-sum-1d": true,
     "prefix-sum-2d": true,
     "quan-ly-thoi-gian": true,
