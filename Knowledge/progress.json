@@ -1,10 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T13:06:41.601Z",
+  "updatedAt": "2026-11-17T13:07:21.341Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "assert-kiem-tra-bat-bien": true,
     "atcoder": true,
+    "bfs": true,
     "bieu-dien-do-thi": true,
     "big-o-cac-lop": true,
     "cai-dat-trinh-bien-dich-ide": true,
@@ -23,6 +24,7 @@
     "do-thoi-gian-bo-nho": true,
     "doc-de-phan-tich-rang-buoc": true,
     "doc-ghi-file-freopen": true,
+    "flood-fill-dem-vung": true,
     "gcd-lcm": true,
     "ghi-chu-on-tap": true,
     "git-luu-tru-loi-giai": true,
