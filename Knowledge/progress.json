@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T11:36:15.920Z",
+  "updatedAt": "2026-11-17T13:06:41.601Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "assert-kiem-tra-bat-bien": true,
@@ -29,6 +29,7 @@
     "go-loi-thuong-gap": true,
     "ham-tham-chieu-lambda": true,
     "hang-so-enum-to-chuc-code": true,
+    "hoan-vi-chinh-hop-to-hop": true,
     "kieu-so-nguyen-pham-vi": true,
     "lca-binary-lifting": true,
     "mang-chuoi-c-std-string": true,
