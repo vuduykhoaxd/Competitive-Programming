@@ -1,8 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19T21:07:16.372Z",
+  "updatedAt": "2026-11-19T21:10:54.096Z",
   "updatedBy": "roadmap-admin",
   "learned": {
+    "algorithm": true,
     "assert-kiem-tra-bat-bien": true,
     "atcoder": true,
     "bfs": true,
