@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T13:07:21.341Z",
+  "updatedAt": "2026-11-19T20:53:19.844Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "assert-kiem-tra-bat-bien": true,
@@ -49,6 +49,7 @@
     "stack-kiem-tra-ngoac": true,
     "stress-test-doi-chieu": true,
     "stress-test-thu-nho-phan-vi-du": true,
+    "struct-pair-tuple-toan-tu": true,
     "template-ca-nhan": true,
     "test-tay-test-bien": true,
     "thanh-phan-lien-thong": true,
