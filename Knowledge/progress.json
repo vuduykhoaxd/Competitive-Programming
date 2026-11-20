@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-19T21:10:54.096Z",
+  "updatedAt": "2026-11-20T13:19:54.726Z",
   "updatedBy": "roadmap-admin",
   "learned": {
     "algorithm": true,
@@ -40,6 +40,7 @@
     "phan-tich-vong-lap-de-quy": true,
     "prefix-sum-1d": true,
     "prefix-sum-2d": true,
+    "priority-queue": true,
     "quan-ly-thoi-gian": true,
     "sach-cp-algorithms": true,
     "sap-xep-co-ban": true,
